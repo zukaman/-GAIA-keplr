@@ -29,7 +29,7 @@ window.onload = async () => {
     feeCurrencies: [
         {
             coinDenom: "ATOM",
-            coinMinimalDenom: "utom",
+            coinMinimalDenom: "uatom",
             coinDecimals: 6,
             coinGeckoId: "uatom",
         },
