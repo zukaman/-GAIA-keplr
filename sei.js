@@ -3,42 +3,42 @@ window.onload = async () => {
         alert("Please install keplr extension");
     } else 
     await window.keplr.experimentalSuggestChain({
-    chainId: "atlantic-1",
-    chainName: "sei_test",
-    rpc: "http://78.107.234.44:16657", // replace with your rpc url
+    chainId: "GAIA",
+    chainName: "GAIA",
+    rpc: "http://78.107.234.44:36657", // replace with your rpc url
     rest: "http://78.107.234.44:1317", // replace with your rest api url
     bip44: {
         coinType: 118,
     },
     bech32Config: {
-        bech32PrefixAccAddr: "sei",
-        bech32PrefixAccPub: "sei" + "pub",
-        bech32PrefixValAddr: "sei" + "valoper",
-        bech32PrefixValPub: "sei" + "valoperpub",
-        bech32PrefixConsAddr: "sei" + "valcons",
-        bech32PrefixConsPub: "sei" + "valconspub",
+        bech32PrefixAccAddr: "cosmos",
+        bech32PrefixAccPub: "cosmos" + "pub",
+        bech32PrefixValAddr: "cosmos" + "valoper",
+        bech32PrefixValPub: "cosmos" + "valoperpub",
+        bech32PrefixConsAddr: "cosmos" + "valcons",
+        bech32PrefixConsPub: "cosmos" + "valconspub",
     },
     currencies: [ 
         { 
-            coinDenom: "SEI", 
-            coinMinimalDenom: "usei", 
+            coinDenom: "ATOM", 
+            coinMinimalDenom: "uatom", 
             coinDecimals: 6, 
             coinGeckoId: "uatom", 
         }, 
     ],
     feeCurrencies: [
         {
-            coinDenom: "SEI",
-            coinMinimalDenom: "usei",
+            coinDenom: "ATOM",
+            coinMinimalDenom: "utom",
             coinDecimals: 6,
-            coinGeckoId: "usei",
+            coinGeckoId: "uatom",
         },
     ],
     stakeCurrency: {
-        coinDenom: "SEI",
-        coinMinimalDenom: "usei",
+        coinDenom: "ATOM",
+        coinMinimalDenom: "uatom",
         coinDecimals: 6,
-        coinGeckoId: "usei",
+        coinGeckoId: "uatom",
       },
     coinType: 118,
     gasPriceStep: {
