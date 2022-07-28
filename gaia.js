@@ -6,7 +6,7 @@ window.onload = async () => {
     chainId: "GAIA",
     chainName: "GAIA",
     rpc: "http://78.107.234.44:36657", // replace with your rpc url
-    rest: "http://78.107.234.44:1317", // replace with your rest api url
+    rest: "http://78.107.234.44:2327", // replace with your rest api url
     bip44: {
         coinType: 118,
     },
